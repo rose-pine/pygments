@@ -12,15 +12,12 @@
 </p>
 
 [![GitHub Actions test status](https://img.shields.io/github/workflow/status/drearondov/pygments-rose-pine/Test/main.svg?style=flat-square&label=tests)](https://github.com/drearondov/pygments-rose-pine/actions?query=workflow%3ATest)
-
-[![Coveralls code coverage](https://img.shields.io/coveralls/github/drearondov/pygments-rose-pine/main?style=flat-square)](https://coveralls.io/github/drearondov/pygments-rose-pine)
-
 [![License](https://img.shields.io/badge/license-ISC-purple?style=flat-square)](https://github.com/drearondov/pygments-rose-pine/blob/main/LICENSE)
-
-[![Python versions](https://img.shields.io/badge/python-3.8%20%7C%203.9-blue?style=flat-square)](https://www.python.org/downloads/)
-
+[![Python versions](
+https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Fdrearondov%2Fpygments-rose-pine%2Fmain%2Fpyproject.toml&style=flat-square&logo=python&logoColor=white&color=blue
+)
+](https://www.python.org/downloads/)
 [![Latest release](https://img.shields.io/github/v/release/drearondov/pygments-rose-pine?style=flat-square)](https://github.com/drearondov/pygments-rose-pine/releases/latest)
-
 [![Any color you like](https://img.shields.io/badge/code%20style-black-black?style=flat-square)](https://github.com/psf/black)
 
 ## Installation
