@@ -11,15 +11,15 @@ import sys
 
 sys.path.insert(0, str(Path("..").resolve()))
 
-from gruvbox import __author__, __version__  # noqa: E402
+from rosepine import __author__, __version__  # noqa: E402
 
 
 # -- Project information -----------------------------------------------------
 
-changelog_mtime = Path("../CHANGELOG.rst").stat().st_mtime
+changelog_mtime = Path("../CHANGELOG.md").stat().st_mtime
 copyright_year = dt.datetime.utcfromtimestamp(changelog_mtime)
 
-project = "ipython-style-gruvbox"
+project = "pygments-rose-pine"
 author = __author__
 release = __version__
 version = ".".join(release.split(".", 2)[:2])
@@ -35,6 +35,7 @@ extensions = [
     "sphinx.ext.githubpages",
     "sphinx.ext.napoleon",
     "sphinx_autodoc_typehints",
+    "myst_parser"
 ]
 
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
@@ -43,4 +44,4 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 # -- Options for HTML output -------------------------------------------------
 
 html_theme = "furo"
-html_title = "IPython Style Gruvbox"
+html_title = "Rose Pine for Pygments"
