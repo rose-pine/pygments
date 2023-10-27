@@ -5,7 +5,9 @@ from pygments.lexers import PythonLexer
 from pygments.formatters import TerminalTrueColorFormatter
 from pytest import param
 
-from rosepine import RosePineStyle, RosePineMoonStyle, RosePineDawnStyle
+from rosepine import RosePineStyle
+from rosepinemoon import RosePineMoonStyle
+from rosepinedawn import RosePineDawnStyle
 
 
 def highlight_base(code: str) -> str:
