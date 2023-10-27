@@ -2,7 +2,8 @@
 
 Inspired or informed by the following:
     - rose-pine's theme: https://rosepinetheme.com
-    - Reylly Siemmens's gruvbox Pygments theme: https://github.com/reillysiemens/ipython-style-gruvbox
+    - Reylly Siemmens's gruvbox Pygments theme:
+      https://github.com/reillysiemens/ipython-style-gruvbox
     - python-mode's syntax highlighting: https://git.io/JvV4t
     - The Pygments Python lexer: https://git.io/Jviis
 """
