@@ -11,7 +11,7 @@ import sys
 
 sys.path.insert(0, str(Path("..").resolve()))
 
-from rosepine import __author__, __version__  # noqa: E402
+from src.rosepine import __author__, __version__  # noqa: E402
 
 
 # -- Project information -----------------------------------------------------
@@ -23,7 +23,7 @@ project = "pygments-rose-pine"
 author = __author__
 release = __version__
 version = ".".join(release.split(".", 2)[:2])
-copyright = f'{copyright_year:%Y}, {author}'
+copyright = f"{copyright_year:%Y}, {author}"
 
 
 # -- General configuration ---------------------------------------------------
@@ -35,7 +35,7 @@ extensions = [
     "sphinx.ext.githubpages",
     "sphinx.ext.napoleon",
     "sphinx_autodoc_typehints",
-    "myst_parser"
+    "myst_parser",
 ]
 
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
