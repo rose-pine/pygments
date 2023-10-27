@@ -15,7 +15,7 @@
 https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Fdrearondov%2Fpygments-rose-pine%2Fmain%2Fpyproject.toml&style=flat-square&logo=python&logoColor=white&color=blue
 )
 ](https://www.python.org/downloads/)
-[![GitHub Actions test status](https://img.shields.io/github/workflow/status/drearondov/pygments-rose-pine/Test/main.svg?style=flat-square&label=tests)](https://github.com/drearondov/pygments-rose-pine/actions?query=workflow%3ATest)
+[![GitHub Actions test status](https://img.shields.io/github/workflow/status/drearondov/pygments-rose-pine/test/main.svg?style=flat-square&label=tests)](https://github.com/drearondov/pygments-rose-pine/actions?query=workflow%3Atest)
 ![Codecov](https://img.shields.io/codecov/c/github/drearondov/pygments-rose-pine?style=flat-square&logo=codecov&logoColor=white)
 [![License](https://img.shields.io/badge/license-ISC-purple?style=flat-square)](https://github.com/drearondov/pygments-rose-pine/blob/main/LICENSE)
 [![Latest release](https://img.shields.io/github/v/release/drearondov/pygments-rose-pine?style=flat-square)](https://github.com/drearondov/pygments-rose-pine/releases/latest)
