@@ -1,111 +1,47 @@
-[build-system]
-requires = ["poetry>=0.12"]
-build-backend = "poetry.masonry.api"
-
 [tool.poetry]
-name = "ipython-style-gruvbox"
+name = "pygments-rose-pine"
 version = "1.0.0"
-description = "An opinionated terminal colorscheme for IPython using gruvbox colors."
+description = "Soho vibes for Pygments"
 license = "ISC"
-authors = ["Reilly Tucker Siemens <reilly@tuckersiemens.com>"]
-readme = "README.rst"
-homepage = "https://github.com/reillysiemens/ipython-style-gruvbox"
-repository = "https://github.com/reillysiemens/ipython-style-gruvbox"
-keywords = ["ipython", "pygments-style", "gruvbox"]
+authors = ["Andrea Rondón <andrea.estefania.rv@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/drearondov/pygments-rose-pine"
+repository = "https://github.com/drearondov/pygments-rose-pine"
+keywords = ["pygments-style", "pygments", "rose-pine", "IPython", "radian"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Environment :: Console",
-    "Framework :: IPython",
+    "Framework :: Pygments",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: ISC License (ISCL)",
     "Natural Language :: English",
     "Operating System :: POSIX :: Linux",
     "Operating System :: POSIX :: BSD :: FreeBSD",
-    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: Implementation :: CPython",
     "Topic :: Software Development",
-    "Topic :: Religion",
 ]
-packages = [
-    { include = "gruvbox.py" },
-]
+packages = [{ include = "rosepine.py" }]
 
 [tool.poetry.dependencies]
-python = "^3.8"
-pygments = "^2.6.1"
+python = ">=3.9"
+pygments = ">=2.13.0"
 
-[tool.poetry.dev-dependencies]
-tox = "^3.14.5"
-tox-gh-actions = "^1.1.0"
+[tool.poetry.group.dev.dependencies]
+tox = ">=3.14.5"
+tox-gh-actions = ">=1.1.0"
+pytest = ">=7.2.0"
+bandit = ">=1.7.4"
+myst-parser = ">=0.18.1"
+pytest-cov = "^4.1.0"
+pytest-stub = "^1.1.0"
 
 [tool.poetry.plugins."pygments.styles"]
-gruvbox = "gruvbox:GruvboxStyle"
+rose-pine = "rosepine:RosePineStyle"
+rose-pine-moon = "rosepine:RosePineMoonStyle"
+rose-pine-dawn = "rosepine:RosePineDawnStyle"
 
-[tool.tox]
-legacy_tox_ini = """
-[tox]
-minversion = 3.14.0
-envlist =
-    python3.8
-    python3.9
-    python3.10
-    static
-    docs
-
-[testenv]
-whitelist_externals = poetry
-skip_install = true
-deps =
-    pytest ~=  5.3.0
-    pytest-cov ~= 2.8.0
-    pytest-randomly ~= 3.2.0
-# XXX: (2020-03-15) This will install tox again, but it only happens once.
-commands_pre = poetry install
-commands =
-    pytest \
-        --verbose \
-        --cov=gruvbox \
-        --cov-report=term-missing \
-        --cov-fail-under=100 \
-        {posargs}
-
-[testenv:static]
-basepython = python3.9
-deps =
-    bandit ~= 1.6.0
-    black ~= 19.10b0
-    flake8 ~= 3.7.0
-    flake8-bugbear ~= 20.1.0
-    flake8-commas ~= 2.0.0
-    flake8-docstrings ~= 1.5.0
-    pep8-naming ~= 0.9.0
-    mypy ~= 0.760
-commands_pre =
-commands =
-    black --check gruvbox.py
-    flake8 --docstring-convention=google gruvbox.py
-    mypy \
-        --disallow-untyped-calls \
-        --disallow-untyped-defs \
-        --disallow-incomplete-defs \
-        --disallow-untyped-decorators \
-        gruvbox.py
-    bandit --recursive -ll gruvbox.py
-
-[testenv:docs]
-basepython = python3.9
-deps =
-    sphinx ~= 3.3.0
-    sphinx-autodoc-typehints ~= 1.10.0
-    furo == 2020.11.27b19    
-commands_pre =
-commands =
-    sphinx-build -b html docs {posargs:docs/_build/html}
-
-[gh-actions]
-python =
-    3.8: python3.8
-    3.9: python3.9, static, docs
-    3.10: python3.10
-"""
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
