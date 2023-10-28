@@ -11,13 +11,13 @@
     </a>
 </p>
 
-[![Python versions](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Fdrearondov%2Fpygments-rose-pine%2Fmain%2Fpyproject.toml&style=flat-square&logo=python&logoColor=white&color=blue)
+[![Python versions](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Fdrearondov%2Fpygments-rose-pine%2Fmain%2Fpyproject.toml&style=for-the-badge&logo=python&logoColor=white&color=blue)
 ](https://www.python.org/downloads/)
 [![test](https://github.com/drearondov/pygments-rose-pine/actions/workflows/test.yml/badge.svg)](https://github.com/drearondov/pygments-rose-pine/actions/workflows/test.yml)
-![Codecov](https://img.shields.io/codecov/c/github/drearondov/pygments-rose-pine?style=flat-square&logo=codecov&logoColor=white)
-[![License](https://img.shields.io/badge/license-ISC-purple?style=flat-square)](https://github.com/drearondov/pygments-rose-pine/blob/main/LICENSE)
-[![Latest release](https://img.shields.io/github/v/release/drearondov/pygments-rose-pine?style=flat-square)](https://github.com/drearondov/pygments-rose-pine/releases/latest)
-[![Any color you like](https://img.shields.io/badge/code%20style-black-black?style=flat-square)](https://github.com/psf/black)
+![Codecov](https://img.shields.io/codecov/c/github/drearondov/pygments-rose-pine?style=for-the-badge&logo=codecov&logoColor=white)
+[![License](https://img.shields.io/badge/license-ISC-purple?style=for-the-badge)](https://github.com/drearondov/pygments-rose-pine/blob/main/LICENSE)
+[![Latest release](https://img.shields.io/github/v/release/drearondov/pygments-rose-pine?style=for-the-badge)](https://github.com/drearondov/pygments-rose-pine/releases/latest)
+[![Any color you like](https://img.shields.io/badge/code%20style-black-black?style=for-the-badge)](https://github.com/psf/black)
 
 ## Installation
 
@@ -84,6 +84,6 @@ options(radian.color_scheme = "rose-pine")
 
 ## Gallery
 
-![Rosé Pine](docs/static/rose-pine.png)
-![Rosé Pine Moon](docs/static/rose-pine-moon.png)
-![Rosé Pine Dawn](docs/static/rose-pine-dawn.png)
+![Rosé Pine](https://github.com/drearondov/pygments-rose-pine/docs/static/rose-pine.png)
+![Rosé Pine Moon](https://github.com/drearondov/pygments-rose-pine/docs/static/rose-pine-moon.png)
+![Rosé Pine Dawn](https://github.com/drearondov/pygments-rose-pine/docs/static/rose-pine-dawn.png)
