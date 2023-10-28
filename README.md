@@ -11,11 +11,9 @@
     </a>
 </p>
 
-[![Python versions](
-https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Fdrearondov%2Fpygments-rose-pine%2Fmain%2Fpyproject.toml&style=flat-square&logo=python&logoColor=white&color=blue
-)
+[![Python versions](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Fdrearondov%2Fpygments-rose-pine%2Fmain%2Fpyproject.toml&style=flat-square&logo=python&logoColor=white&color=blue)
 ](https://www.python.org/downloads/)
-[![GitHub Actions test status](https://img.shields.io/github/workflow/status/drearondov/pygments-rose-pine/test/main.svg?style=flat-square&label=tests)](https://github.com/drearondov/pygments-rose-pine/actions?query=workflow%3Atest)
+[![test](https://github.com/drearondov/pygments-rose-pine/actions/workflows/test.yml/badge.svg)](https://github.com/drearondov/pygments-rose-pine/actions/workflows/test.yml)
 ![Codecov](https://img.shields.io/codecov/c/github/drearondov/pygments-rose-pine?style=flat-square&logo=codecov&logoColor=white)
 [![License](https://img.shields.io/badge/license-ISC-purple?style=flat-square)](https://github.com/drearondov/pygments-rose-pine/blob/main/LICENSE)
 [![Latest release](https://img.shields.io/github/v/release/drearondov/pygments-rose-pine?style=flat-square)](https://github.com/drearondov/pygments-rose-pine/releases/latest)
@@ -27,7 +25,7 @@ The `pygments-rose-pine` package is not currently published to [PyPI](https://py
 If, however, you still wish to install this package, the following steps
 *should* work to install the [latest release](https://github.com/drearondov/pygments-rose-pine/releases/latest).
 
-``` bash
+```bash
 repo="https://github.com/drearondov/pygments-rose-pine"
 
 # Find the latest release.
@@ -56,22 +54,22 @@ Below there are some examples for common consoles.
 
 In the case of IPython, you can launch the console with the following command.
 
-``` bash
+```bash
 ipython --TerminalInteractiveShell.highlighting_style=rose-pine
 ```
 
 or add it to your [IPython config](https://ipython.readthedocs.io/en/stable/config/intro.html).
 
-``` python
+```python
 config = get_config()
 config.TerminalInteractiveShell.highlighting_style = "rose-pine"
 ```
 
-> *Note:* This will only affect your syntax highlighting. If you\'re looking to
+> *Note:* This will only affect your syntax highlighting. If you're looking to
 > modify your prompt, Reilly Siemmens from the
 > [IPython Gruvbox theme](https://github.com/reillysiemens/ipython-style-gruvbox)
 > has an excellent [example prompt](https://github.com/reillysiemens/dotfiles/blob/8994f69f23271aa93d83e81032542f17b38423fd/.ipython/profile_default/ipython_config.py)
-> on how to customize it.
+> that shows how to customize it.
 
 ### Radian
 
@@ -86,4 +84,6 @@ options(radian.color_scheme = "rose-pine")
 
 ## Gallery
 
-![Rosé Pine with App](https://user-images.githubusercontent.com/1474821/166155319-06796439-95a7-4aea-910e-927c1f24518e.png)
+![Rosé Pine](docs/static/rose-pine.png)
+![Rosé Pine Moon](docs/static/rose-pine-moon.png)
+![Rosé Pine Dawn](docs/static/rose-pine-dawn.png)

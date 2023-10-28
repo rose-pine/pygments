@@ -11,7 +11,7 @@ import sys
 
 sys.path.insert(0, str(Path("..").resolve()))
 
-from src.rosepine import __author__, __version__  # noqa: E402
+from src import __author__, __version__  # noqa: E402
 
 
 # -- Project information -----------------------------------------------------
@@ -35,7 +35,6 @@ extensions = [
     "sphinx.ext.githubpages",
     "sphinx.ext.napoleon",
     "sphinx_autodoc_typehints",
-    "myst_parser",
 ]
 
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
@@ -44,4 +43,14 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 # -- Options for HTML output -------------------------------------------------
 
 html_theme = "furo"
-html_title = "Rose Pine for Pygments"
+html_title = "Rose Piné for Pygments"
+html_theme_options = {
+    "light_css_variables": {
+        "color-brand-primary": "#b4637a",
+        "color-brand-content": "#b4637a",
+    },
+    "dark_css_variables": {
+        "color-brand-primary": "#b4637a",
+        "color-brand-content": "#b4637a",
+    },
+}
