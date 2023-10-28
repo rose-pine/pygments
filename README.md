@@ -84,6 +84,6 @@ options(radian.color_scheme = "rose-pine")
 
 ## Gallery
 
-![Rosé Pine](https://github.com/drearondov/pygments-rose-pine/docs/static/rose-pine.png)
-![Rosé Pine Moon](https://github.com/drearondov/pygments-rose-pine/docs/static/rose-pine-moon.png)
-![Rosé Pine Dawn](https://github.com/drearondov/pygments-rose-pine/docs/static/rose-pine-dawn.png)
+![Rosé Pine](docs/static/rose-pine.png)
+![Rosé Pine Moon](docs/static/rose-pine-moon.png)
+![Rosé Pine Dawn](docs/static/rose-pine-dawn.png)
