@@ -19,6 +19,10 @@
 [![Latest release](https://img.shields.io/github/v/release/drearondov/pygments-rose-pine?style=for-the-badge)](https://github.com/drearondov/pygments-rose-pine/releases/latest)
 [![Any color you like](https://img.shields.io/badge/code%20style-black-black?style=for-the-badge)](https://github.com/psf/black)
 
+## Requirements
+
+This package has been tested on Python versions 3.9, 3.10, 3.11 with Python 3.9 beeing the minimum required.
+
 ## Installation
 
 The `pygments-rose-pine` package is not currently published to [PyPI](https://pypi.org/).
@@ -26,7 +30,7 @@ If, however, you still wish to install this package, the following steps
 *should* work to install the [latest release](https://github.com/drearondov/pygments-rose-pine/releases/latest).
 
 ```bash
-repo="https://github.com/drearondov/pygments-rose-pine"
+repo="git@github.com:rose-pine/pygments.git"
 
 # Find the latest release.
 latest=$(git ls-remote --tags --refs $repo | # Fetch remote tags.
@@ -84,6 +88,14 @@ options(radian.color_scheme = "rose-pine")
 
 ## Gallery
 
+*Rose Piné*
+
 ![Rosé Pine](docs/static/rose-pine.png)
+
+*Rose Piné Moon*
+
 ![Rosé Pine Moon](docs/static/rose-pine-moon.png)
+
+*Rose Piné Dawn*
+
 ![Rosé Pine Dawn](docs/static/rose-pine-dawn.png)

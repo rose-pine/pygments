@@ -27,9 +27,7 @@ from pygments.token import (
 
 @dataclass(frozen=True)
 class Color:
-    """
-    Absolute colors as defined by rose-pine: https://rosepinetheme.com/palette
-    """
+    """Absolute colors as defined by rose-pine: https://rosepinetheme.com/palette."""
 
     moon_base = "#232136"
     moon_surface = "#2a273f"
@@ -49,7 +47,7 @@ class Color:
 
 
 class RosePineMoonStyle(Style):
-    """Soho vibes for Pygments. Based on the colors of Rose Pine Moon theme"""
+    """Soho vibes for Pygments. Based on the colors of Rose Pine Moon theme."""
 
     styles: Dict[Any, str] = {
         Comment: Color.moon_subtle,

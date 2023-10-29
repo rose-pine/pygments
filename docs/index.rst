@@ -30,7 +30,7 @@ release <https://github.com/drearondov/pygments-rose-pine/releases/latest>`__.
 
 .. code:: bash
 
-   repo="https://github.com/drearondov/pygments-rose-pine"
+   repo="https://github.com/rose-pine/pygments.git"
 
    # Find the latest release.
    latest=$(git ls-remote --tags --refs $repo | # Fetch remote tags.
@@ -111,7 +111,7 @@ Gallery
    :width: 45%
 
 .. image:: static/rose-pine-dawn.png
-   :width: 45%
+   :width: 40%
 
 
 .. |Python versions| image:: https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Fdrearondov%2Fpygments-rose-pine%2Fmain%2Fpyproject.toml&style=for-the-badge&logo=python&logoColor=white&color=blue
