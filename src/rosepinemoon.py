@@ -49,6 +49,8 @@ class Color:
 class RosePineMoonStyle(Style):
     """Soho vibes for Pygments. Based on the colors of Rose Pine Moon theme."""
 
+    background_color: str = Color.moon_base
+
     styles: Dict[Any, str] = {
         Comment: Color.moon_subtle,
         Error: Color.moon_love,
