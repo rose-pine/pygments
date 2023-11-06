@@ -49,6 +49,8 @@ class Color:
 class RosePineStyle(Style):
     """Soho vibes for Pygments. Based on the colors of Rose Pine main theme."""
 
+    background_color: str = Color.pine_base
+
     styles: Dict[Any, str] = {
         Comment: Color.pine_subtle,
         Error: Color.pine_love,
