@@ -4,12 +4,11 @@ Inspired or informed by the following:
     - rose-pine's theme: https://rosepinetheme.com
     - Reylly Siemmens's gruvbox Pygments theme:
       https://github.com/reillysiemens/ipython-style-gruvbox
-    - python-mode's syntax highlighting: https://git.io/JvV4t
     - The Pygments Python lexer: https://git.io/Jviis
 """
 
 from dataclasses import dataclass
-from typing import Any, Dict
+from typing import Any
 
 from pygments.style import Style
 from pygments.token import (
@@ -27,7 +26,7 @@ from pygments.token import (
 
 @dataclass(frozen=True)
 class Color:
-    """Absolute colors as defined by rose-pine: https://rosepinetheme.com/palette."""
+    """Absolute colors as defined by rose-pine: https://rosepinetheme.com/palette."""  # noqa: E501
 
     moon_base = "#232136"
     moon_surface = "#2a273f"
@@ -47,11 +46,11 @@ class Color:
 
 
 class RosePineMoonStyle(Style):
-    """Soho vibes for Pygments. Based on the colors of Rose Pine Moon theme."""
+    """Soho vibes for Pygments. Based on the colors of Rose Pine Moon theme."""  # noqa: E501
 
     background_color: str = Color.moon_base
 
-    styles: Dict[Any, str] = {
+    styles: dict[Any, str] = {
         Comment: Color.moon_subtle,
         Error: Color.moon_love,
         Keyword.Namespace: Color.moon_pine,

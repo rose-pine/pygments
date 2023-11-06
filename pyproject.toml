@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pygments-rose-pine"
-version = "1.0.0"
+version = "1.0.1"
 description = "Soho vibes for Pygments"
 license = "ISC"
 authors = ["Andrea Rondón <andrea.estefania.rv@gmail.com>"]
@@ -33,18 +33,21 @@ python = ">=3.9"
 pygments = ">=2.13.0"
 
 [tool.poetry.group.dev.dependencies]
-tox = ">=3.14.5"
-tox-gh-actions = ">=1.1.0"
+coverage = ">=7.3.2"
+ipython = ">=8.16.1"
+darglint = ">=1.8.1"
+flake8 = ">=4.0.1"
+flake8-bugbear = ">=21.9.2"
+flake8-docstrings = ">=1.6.0"
+flake8-rst-docstrings = ">=0.2.5"
 pytest = ">=7.2.0"
-bandit = ">=1.7.4"
-myst-parser = ">=0.18.1"
 pytest-cov = "^4.1.0"
 pytest-stub = "^1.1.0"
-coverage = "^7.3.2"
-ipython = "^8.16.1"
+tox = ">=3.14.5"
+tox-gh-actions = ">=1.1.0"
+bandit = ">=1.7.4"
 sphinx-autodoc-typehints = "^1.24.0"
 furo = "^2023.9.10"
-flake8-docstrings = "^1.7.0"
 
 [tool.poetry.plugins."pygments.styles"]
 "rose-pine" = "rosepine:RosePineStyle"

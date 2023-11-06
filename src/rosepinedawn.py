@@ -4,7 +4,6 @@ Inspired or informed by the following:
     - rose-pine's theme: https://rosepinetheme.com
     - Reylly Siemmens's gruvbox Pygments theme:
       https://github.com/reillysiemens/ipython-style-gruvbox
-    - python-mode's syntax highlighting: https://git.io/JvV4t
     - The Pygments Python lexer: https://git.io/Jviis
 """
 
@@ -27,7 +26,7 @@ from pygments.token import (
 
 @dataclass(frozen=True)
 class Color:
-    """Absolute colors as defined by rose-pine: https://rosepinetheme.com/palette."""
+    """Absolute colors as defined by rose-pine: https://rosepinetheme.com/palette."""  # noqa: E501
 
     dawn_base = "#faf4ed"
     dawn_surface = "#fffaf3"
@@ -47,7 +46,7 @@ class Color:
 
 
 class RosePineDawnStyle(Style):
-    """Soho vibes for Pygments. Based on the colors of Rose Pine Dawn theme."""
+    """Soho vibes for Pygments. Based on the colors of Rose Pine Dawn theme."""  # noqa: E501
 
     background_color: str = Color.dawn_base
 
