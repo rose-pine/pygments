@@ -9,28 +9,28 @@ homepage = "https://github.com/drearondov/pygments-rose-pine"
 repository = "https://github.com/drearondov/pygments-rose-pine"
 keywords = ["pygments-style", "pygments", "rose-pine", "IPython", "radian"]
 classifiers = [
-    "Development Status :: 5 - Production/Stable",
-    "Environment :: Console",
-    "Framework :: Pygments",
-    "Intended Audience :: Developers",
-    "License :: OSI Approved :: ISC License (ISCL)",
-    "Natural Language :: English",
-    "Operating System :: POSIX :: Linux",
-    "Operating System :: POSIX :: BSD :: FreeBSD",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: Implementation :: CPython",
-    "Topic :: Software Development",
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: ISC License (ISCL)",
+  "Natural Language :: English",
+  "Operating System :: POSIX :: Linux",
+  "Operating System :: POSIX :: BSD :: FreeBSD",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Topic :: Software Development",
 ]
 packages = [
-    { include = "rosepine.py", from = "src" },
-    { include = "rosepinemoon.py", from = "src" },
-    { include = "rosepinedawn.py", from = "src" },
+  { include = "rosepine.py", from = "src" },
+  { include = "rosepinemoon.py", from = "src" },
+  { include = "rosepinedawn.py", from = "src" },
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.9"
+python = ">=3.9, <4.0"
 pygments = ">=2.13.0"
+pre-commit = "^3.5.0"
 
 [tool.poetry.group.dev.dependencies]
 coverage = ">=7.3.2"

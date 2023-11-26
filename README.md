@@ -11,9 +11,8 @@
     </a>
 </p>
 
-[![Python versions](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Fdrearondov%2Fpygments-rose-pine%2Fmain%2Fpyproject.toml&style=for-the-badge&logo=python&logoColor=white&color=blue)
-](https://www.python.org/downloads/)
-[![test](https://github.com/drearondov/pygments-rose-pine/actions/workflows/test.yml/badge.svg)](https://github.com/drearondov/pygments-rose-pine/actions/workflows/test.yml)
+[![Python versions](https://img.shields.io/badge/python-%3E=3.9-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/rose-pine/pygments/test.yml?style=for-the-badge&logo=GitHub&label=test)
 ![Codecov](https://img.shields.io/codecov/c/github/drearondov/pygments-rose-pine?style=for-the-badge&logo=codecov&logoColor=white)
 [![License](https://img.shields.io/badge/license-ISC-purple?style=for-the-badge)](https://github.com/drearondov/pygments-rose-pine/blob/main/LICENSE)
 [![Latest release](https://img.shields.io/github/v/release/drearondov/pygments-rose-pine?style=for-the-badge)](https://github.com/drearondov/pygments-rose-pine/releases/latest)
@@ -21,7 +20,8 @@
 
 ## Requirements
 
-This package has been tested on Python versions 3.9, 3.10, 3.11 with Python 3.9 beeing the minimum required.
+This package has been tested on Python versions 3.9, 3.10, 3.11 with Python 3.9
+being the minimum required.
 
 ## Installation
 
