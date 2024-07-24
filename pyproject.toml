@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pygments-rose-pine"
-version = "1.0.1"
+version = "1.0.2"
 description = "Soho vibes for Pygments"
 license = "ISC"
 authors = ["Andrea Rondón <andrea.estefania.rv@gmail.com>"]
