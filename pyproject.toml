@@ -5,8 +5,8 @@ description = "Soho vibes for Pygments"
 license = "ISC"
 authors = ["Andrea Rondón <andrea.estefania.rv@gmail.com>"]
 readme = "README.md"
-homepage = "https://github.com/drearondov/pygments-rose-pine"
-repository = "https://github.com/drearondov/pygments-rose-pine"
+homepage = "https://github.com/rose-pine/pygments-rose-pine"
+repository = "https://github.com/rose-pine/pygments-rose-pine"
 keywords = ["pygments-style", "pygments", "rose-pine", "IPython", "radian"]
 classifiers = [
   "Development Status :: 5 - Production/Stable",

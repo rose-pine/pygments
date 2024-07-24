@@ -27,10 +27,10 @@ being the minimum required.
 
 The `pygments-rose-pine` package is not currently published to [PyPI](https://pypi.org/).
 If, however, you still wish to install this package, the following steps
-*should* work to install the [latest release](https://github.com/drearondov/pygments-rose-pine/releases/latest).
+_should_ work to install the [latest release](https://github.com/drearondov/pygments-rose-pine/releases/latest).
 
 ```bash
-repo="git@github.com:rose-pine/pygments.git"
+repo="https://github.com/rose-pine/pygments"
 
 # Find the latest release.
 latest=$(git ls-remote --tags --refs $repo | # Fetch remote tags.
@@ -45,6 +45,28 @@ release="${repo}/releases/download/${latest}/${wheel}"
 
 # Install the release.
 pip install $release
+```
+
+You can also use [Pipx](https://github.com/pypa/pipx) to install it, but bear in
+mind that you need to inject the package in the `venv` of the tool you want to
+use it with. So the script will be:
+
+```bash
+repo="https://github.com/rose-pine/pygments"
+
+# Find the latest release.
+latest=$(git ls-remote --tags --refs $repo | # Fetch remote tags.
+                 sort -t '/' -k 3 -V |       # Sort them by version.
+                 tail -n 1 |                 # Take the latest one.
+                 awk -F / '{print $3}')      # Return only the tag.
+
+# Craft the URL for the release asset.
+version=$(echo $latest | tr -d 'v')  # Remove the leading v.
+wheel="pygments_rose_pine-${version}-py3-none-any.whl"
+release="${repo}/releases/download/${latest}/${wheel}"
+
+# Install the release.
+pipx inject {name of the tool} $release
 ```
 
 ## Usage
@@ -69,7 +91,7 @@ config = get_config()
 config.TerminalInteractiveShell.highlighting_style = "rose-pine"
 ```
 
-> *Note:* This will only affect your syntax highlighting. If you're looking to
+> _Note:_ This will only affect your syntax highlighting. If you're looking to
 > modify your prompt, Reilly Siemmens from the
 > [IPython Gruvbox theme](https://github.com/reillysiemens/ipython-style-gruvbox)
 > has an excellent [example prompt](https://github.com/reillysiemens/dotfiles/blob/8994f69f23271aa93d83e81032542f17b38423fd/.ipython/profile_default/ipython_config.py)
@@ -84,18 +106,18 @@ In the case of Radian, you can add the theme to your
 options(radian.color_scheme = "rose-pine")
 ```
 
-> *Note:* For radian, the prompt modification options can be found on their [documentation](https://github.com/randy3k/radian).
+> _Note:_ For radian, the prompt modification options can be found on their [documentation](https://github.com/randy3k/radian).
 
 ## Gallery
 
-*Rose Piné*
+_Rose Piné_
 
 ![Rosé Pine](docs/static/rose-pine.png)
 
-*Rose Piné Moon*
+_Rose Piné Moon_
 
 ![Rosé Pine Moon](docs/static/rose-pine-moon.png)
 
-*Rose Piné Dawn*
+_Rose Piné Dawn_
 
 ![Rosé Pine Dawn](docs/static/rose-pine-dawn.png)
