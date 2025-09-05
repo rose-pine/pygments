@@ -7,6 +7,13 @@ This changelog follows the conventions of [keepachangelog.com](http://keepachang
 
 - Publish to Pypy
 
+## [v1.0.3 - 2025-09-05]
+
+### Changed
+
+- Upgraded dependencies
+- Changed types in `styles`
+
 ## [v1.0.2 - 2024-07-24](https://github.com/rose-pine/pygments/compare/v1.0.1...v1.0.2)
 
 ### Added
