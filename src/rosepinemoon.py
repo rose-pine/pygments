@@ -7,8 +7,8 @@ Inspired or informed by the following:
     - The Pygments Python lexer: https://git.io/Jviis
 """
 
+from collections.abc import Mapping
 from dataclasses import dataclass
-from typing import Any
 
 from pygments.style import Style
 from pygments.token import (
@@ -21,6 +21,7 @@ from pygments.token import (
     String,
     Text,
     Token,
+    _TokenType,
 )
 
 
@@ -50,7 +51,7 @@ class RosePineMoonStyle(Style):
 
     background_color: str = Color.moon_base
 
-    styles: dict[Any, str] = {
+    styles: Mapping[_TokenType, str] = {
         Comment: Color.moon_subtle,
         Error: Color.moon_love,
         Keyword.Namespace: Color.moon_pine,
